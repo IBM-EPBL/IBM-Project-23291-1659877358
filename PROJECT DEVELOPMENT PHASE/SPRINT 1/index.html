@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body {
+          background-image: url('1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+    
+</head>
+
+<body >
+<centre>
+    <h1 style="color:white">Personal Expense Tracker</H1>
+</centre>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+               
+            </div>
+
+            
+        </div> 
+        <div class="content">
+            
+               
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="text"  name="Email Id" placeholder="Email Id">
+                    <input class="password" type="password"  name="psw" placeholder="Password">
+                    <input class="confirmpassword" type="password"  name="psw" placeholder="Confirm Password">
+                    <button class="button" type="submit">Login</button>
+                    <button class="button" type="register"><a href="http://localhost:8080/login/register.html">Register</a></button>
+                    
+                    
+
+                    
+
+                    
+
+                </div>
+                    </div>
+                </div>
+                <script> 
+
+                    document.querySelector('.button').onclick = function(){
+                        var password = document.querySelector('.password').value,
+                        confirmpassword = document.querySelector('.confirmpassword').value;
+    
+                        if(password == ""){
+                            alert("Password field cannot be empty.");
+                        }
+                        else if(password != confirmpassword){
+                            alert("Password didn't match.");
+                        }
+    
+                    }
+                    </script>
+    
+</body>
+</html>
